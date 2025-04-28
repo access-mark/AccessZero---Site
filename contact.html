@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- 1. Title & Description -->
+  <title>Access Zero – Contact Us</title>
+  <meta name="description"
+        content="Get in touch with Access Zero’s cybersecurity experts for proactive risk assessments, 24/7 SOC support, and tailored IT security solutions across South Africa." />
+  <meta name="keywords"
+        content="Access Zero, contact, cybersecurity South Africa, IT security consultation, SOC support, risk assessment" />
+
+  <!-- 2. Canonical URL -->
+  <link rel="canonical" href="https://yourdomain.com/contact.html" />
+
+  <!-- 3. Open Graph -->
+  <meta property="og:title" content="Access Zero – Contact Us" />
+  <meta property="og:description"
+        content="Get in touch with Access Zero’s cybersecurity experts for proactive risk assessments, 24/7 SOC support, and tailored IT security solutions across South Africa." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://yourdomain.com/contact.html" />
+  <meta property="og:image" content="https://yourdomain.com/assets/images/bannerimage_1.png" />
+
+  <!-- 4. Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Access Zero – Contact Us" />
+  <meta name="twitter:description"
+        content="Get in touch with Access Zero’s cybersecurity experts for proactive risk assessments, 24/7 SOC support, and tailored IT security solutions across South Africa." />
+  <meta name="twitter:image" content="https://yourdomain.com/assets/images/bannerimage_1.png" />
+
+  <!-- 5. Favicon -->
+  <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+
+  <!-- Shared global styles -->
+  <link rel="stylesheet" href="assets/css/common.css">
+
+  <!-- Page-specific overrides -->
+  <style>
+    /* Fluid logo sizing */
+    header img { height: clamp(32px, 6.4vw, 80px) !important; width: auto !important; }
+
+    /* Hero banner */
+    .hero {
+      position: relative;
+      width: 100%;
+      height: 300px;
+      background: url('assets/images/bannerimage_1.png') center/cover no-repeat;
+      display: flex; align-items: center; justify-content: center;
+      color: #fff; text-align: center;
+    }
+    .hero::after {
+      content: '';
+      position: absolute; top:0; left:0; width:100%; height:100%;
+      background: rgba(0,0,0,0.5);
+    }
+    .hero-content {
+      position: relative; z-index:2;
+      max-width: 800px; padding: 0 1rem;
+    }
+    .hero-content h1 { font-size: clamp(2rem,5vw,3rem); margin-bottom:0.5rem; }
+    .hero-content p { font-size: clamp(1rem,2.5vw,1.25rem); }
+
+    /* Transparent header over hero */
+    header {
+      position: absolute; top:1rem; left:1rem; right:1rem;
+      display:flex; align-items:center; justify-content:space-between;
+      background: transparent !important; padding: 0; z-index:3;
+    }
+    header nav ul { list-style:none; display:flex; margin:0; padding:0; }
+    header nav li + li { margin-left:1.5rem; }
+    header nav a {
+      color:#fff; text-decoration:none; font-weight:500; font-size:1rem;
+    }
+    header nav a.active { text-decoration: underline; }
+
+    /* Main contact area */
+    .contact-section {
+      display: flex; flex-wrap: wrap; gap:2rem;
+      max-width:1200px; margin:3rem auto; padding:0 1rem;
+    }
+    .contact-form, .contact-info {
+      background:#fff; border-radius:8px; box-shadow:0 4px 16px rgba(0,0,0,0.1);
+      padding:2rem; flex:1 1 300px;
+    }
+
+    /* Form styles */
+    .contact-form h2 {
+      margin-top:0; margin-bottom:1rem; color:var(--color-primary);
+      font-size:1.75rem;
+    }
+    .contact-form .form-group { margin-bottom:1rem; }
+    .contact-form label {
+      display:block; margin-bottom:0.25rem; font-weight:500;
+    }
+    .contact-form input, .contact-form textarea {
+      width:100%; padding:0.75rem; border:1px solid #ccc;
+      border-radius:4px; font-size:1rem; font-family:inherit;
+    }
+    .contact-form textarea { min-height:150px; resize:vertical; }
+    .contact-form button {
+      background:var(--color-accent); color:#fff; border:none;
+      padding:0.75rem 1.5rem; border-radius:4px; font-size:1rem;
+      font-weight:600; cursor:pointer; margin-top:0.5rem;
+    }
+    .contact-form button:hover { background:var(--color-primary); }
+
+    /* Email button */
+    .btn-email {
+      display:inline-block; background:var(--color-accent);
+      color:#fff; padding:0.5rem 1rem; border-radius:4px;
+      text-decoration:none; font-weight:600; margin-top:0.25rem;
+    }
+    .btn-email:hover { background:var(--color-primary); }
+
+    /* Info & map */
+    .contact-info h2 {
+      margin-top:0; margin-bottom:1rem; color:var(--color-primary);
+      font-size:1.75rem;
+    }
+    .contact-info p { margin-bottom:0.75rem; line-height:1.6; }
+    .map-container {
+      width:100%; height:200px; border-radius:4px; overflow:hidden;
+      margin-top:1rem;
+    }
+    .map-container iframe {
+      width:100%; height:100%; border:0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero + Transparent Header -->
+  <div class="hero">
+    <header>
+      <img src="assets/images/Logo.png" alt="Access Zero Logo">
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="hero-content">
+      <h1>Get in Touch</h1>
+      <p>Our team is ready to help you secure, optimize, and transform your digital environment. Drop us a line below or use the details to the right.</p>
+    </div>
+  </div>
+
+  <!-- Contact form & Info -->
+  <div class="contact-section">
+    <!-- Form -->
+    <div class="contact-form">
+      <h2>Contact Form</h2>
+      <form action="https://formspree.io/f/your-form-id" method="POST">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required>
+        </div>
+        <div class="form-group">
+          <label for="company">Company</label>
+          <input id="company" name="company" type="text">
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+
+    <!-- Info & Map -->
+    <div class="contact-info">
+      <h2>Contact Details</h2>
+      <p><strong>Email:</strong><br>
+        <a href="mailto:sales@accesszero.co.za" class="btn-email">sales@accesszero.co.za</a>
+      </p>
+      <p><strong>Phone:</strong><br>
+        +27 (0)10 140 3747
+      </p>
+      <p><strong>Address:</strong><br>
+         Atrium on the 5th, 9th Floor,<br>
+         5th Street, Sandton, 2196<br>
+         South Africa
+      </p>
+      <div class="map-container">
+        <iframe
+          src="https://maps.google.com/maps?q=Atrium%20on%20the%205th%2C%209th%20Floor%2C%205th%20Street%2C%20Sandton%2C%202196&t=&z=15&ie=UTF8&iwloc=&output=embed"
+          allowfullscreen=""
+          loading="lazy">
+        </iframe>
+      </div>
+    </div>
+  </div>
+
+  <!-- Shared Footer -->
+  <div id="site-footer"></div>
+  <script>
+    fetch("footer.html")
+      .then(r => r.text())
+      .then(html => document.getElementById("site-footer").outerHTML = html);
+  </script>
+
+</body>
+</html>
